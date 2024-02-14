@@ -1,0 +1,10 @@
+Domain https://studies.cs.helsinki.fi/exampleapp/
+
+Client -> Server -> Response
+
+GET spa -> 304 Not Modified -> HTML
+GET spa.js -> 304 -> JS
+GET main.css -> 304 -> CSS
+GET data.json -> 304 -> data.json
+
+GET favicon.ico -> 404 -> 404

@@ -1,0 +1,6 @@
+Domain https://studies.cs.helsinki.fi/exampleapp/
+
+Client -> Server -> Response
+
+
+POST application/json {"content": "message", "date":"yyyy-mm-ddTHH.mm.ss"} -> 201 Created -> application/json {"message", "note created"}

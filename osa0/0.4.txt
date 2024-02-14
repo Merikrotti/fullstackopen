@@ -1,0 +1,14 @@
+ sequenceDiagram
+    participant browser
+    participant server
+
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note {{"note": "ok"}}
+    activate_server
+    server-->>browser: MOVED https://studies.cs.helsinki.fi/exampleapp/notes
+    deactivate_server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML
+    deactivate server
